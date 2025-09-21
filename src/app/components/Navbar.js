@@ -1,5 +1,6 @@
 "use client";
 import { useState } from "react";
+import Link from "next/link"; // <-- Link import edildi
 import "./navbar.css";
 
 export default function Navbar() {
@@ -8,8 +9,9 @@ export default function Navbar() {
   return (
     <nav className="navbar">
       <div className="container navbar-container">
+        {/* Logo */}
         <h2 className="logo">
-          <a href="/">Hukuk Danışmanlık</a>
+          <Link href="/">Hukuk Danışmanlık</Link> {/* <a> yerine <Link> */}
         </h2>
 
         {/* Menü ikonu (mobil için) */}
